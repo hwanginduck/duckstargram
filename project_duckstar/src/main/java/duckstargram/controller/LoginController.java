@@ -14,6 +14,7 @@ public class LoginController {
 	
 	@RequestMapping("loginform.do")
 	public String loginform() {
-		return "/loginform";
+		return "/login/loginform";
 	}
+	
 }
