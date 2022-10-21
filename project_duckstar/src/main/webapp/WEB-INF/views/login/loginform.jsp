@@ -11,6 +11,20 @@
 	charset="utf-8"></script>
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script>
+//자바 스크립트에서 window객체의 open("공지창경로와 파일명","공지창이름","공지창속성")
+
+/* 아이디 찾기 팝업창 */
+ function find_id(){
+	 window.open("find_id.do","아이디 찾기","width=450,height=300");
+ }	
+
+ function find_pw(){
+	 window.open("find_pw.do","비밀번호 찾기","width=450,height=300");
+ }	
+</script>
+	
 </head>
 <body>
 	<div align="center">
@@ -24,6 +38,9 @@
 						<input type="password" placeholder="비밀번호" style="width: 300px; height: 50px; font-size: 20px">
 						<br><br> 
 						<input type="submit" value="로그인" class="input_button" style="width: 200px; height: 50px; font-size: 20px" />
+						<br>
+						<input type="button" value="아이디찾기" class="input_button" onclick="find_id()">
+						<input type="button" value="비밀번호찾기" class="input_button" onclick="find_pw()">
 					</td>
 				</tr>
 			</table>
